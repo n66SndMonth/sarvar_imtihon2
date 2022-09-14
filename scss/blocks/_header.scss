@@ -1,0 +1,250 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.header{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99;
+    width: 1440px;
+    height: 96px;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba($color: #000000, $alpha: 0.15);
+
+    &__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1106px;
+        height: 48px;
+        margin: 30px 0 0 0;
+    }
+    &__logo{
+        width: 108px;
+        height: 26px;
+        margin: 10px 0 0 0;
+    }
+    &__list{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 250px;
+        height: 23px;
+        margin: 11px 510px 0 58px;
+        gap: 32px;
+    }
+    &__item{
+        @include font-1;
+        color: #939CAA;
+        cursor: pointer;
+        
+        &:hover{
+            color: #000;
+        }
+        &:active{
+            color: #FCB72B;
+        }
+    }
+    &__btn{
+        width: 180px;
+        height: 48px;
+        margin: 0;
+        background: #FCB72B;
+        border: 1px solid transparent;
+        @include font-1;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            background-color: transparent;
+            border: 3px solid #FCB72B;
+            color: #FCB72B;
+        }
+    }
+    &__burger-box{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .header{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 99;
+        width: 768px;
+        height: 96px;
+        margin: 0;
+
+        &__content{
+            width: 690px;
+            height: 55px;
+            margin: 22px 0 0 40px;
+        }
+        &__logo{
+            width: 108px;
+            height: 30px;
+            margin: 12px 0 0 0;
+        }
+        &__list{
+            width: 250px;
+            height: 26px;
+            margin: 15px 93px 0 59px;
+        }
+        &__btn{
+            width: 180px;
+            height: 55px;
+            background: #FCB72B;
+        }
+    }
+}
+
+@media screen and (max-width: 376px){
+    .header{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        width: 375px;
+        height: 64px;
+        margin: 0;
+
+        &__content{
+            width: 375px;
+            height: 64px;
+            margin: 0;
+        }
+
+        &__list{
+            display: none;
+        }
+        &__btn{
+            display: none;
+        }
+        &__burger-btn{    
+            display: block;
+            width: 180px;
+            height: 48px;
+            margin: 340px 0 0 32px;
+            background: #FCB72B;
+            border: 1px solid transparent;
+
+            @include font-1;
+            color: #fff;
+            cursor: pointer;
+            color: #333A44;
+
+            &:hover{
+                background-color: transparent;
+                border: 3px solid #FCB72B;
+                color: #FCB72B;
+            }
+        }
+        &__logo{
+            width: 80px;
+            height: 20px;
+            margin: 22px 0 0 154px;
+        }
+        &__burger-box{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            margin: 22px 0 0 -220px;
+        }
+        &__burger-list{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 89px;
+            height: 123px;
+            margin: 64px 0 0 32px;
+            gap: 24px;
+        }
+        &__burger-item{
+            @include font-1;
+            font-size: 18px;
+            color: #E5ECF4;
+
+            &:hover{
+                color: #FCB72B;
+            }
+        }
+        &__burger-img{
+            margin: 4px 0 0 5px;
+        }
+
+        &__checkbox{
+            visibility: hidden;
+            width: 0;
+            position: absolute;
+            z-index: 1;
+        }
+        &__label{
+            background: transparent;
+            border-radius: 5px;
+            color: #FFFFFF;
+            position: relative;
+            display: block;
+            z-index: 1;
+            width: 30px;
+            height: 25px;
+            cursor: pointer;
+        }
+        &__label-2{
+            display: none;
+        }
+        &__modal-box{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            margin: 40px 0 0 -45px;
+            width: 256px;
+            height: 603px;
+            background: #333A44;
+        }
+        &__box{
+            position: relative;
+            display: none;
+            -webkit-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            -o-transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+            z-index: 0;
+        }
+        &__checkbox:checked ~ &__box{
+            display: block;
+        }
+        &__checkbox:checked ~ &__label{
+            display: none;
+        }
+        &__checkbox:checked ~ &__label-2{
+            display: block;
+            width: 30px;
+            height: 25px;
+            padding: 5px 0 0 6px;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.intro{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0;
+    margin: 0 auto;
+    
+    &__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1440px;
+        height: 650px;
+        margin: 96px auto 0;
+        background-image: url(../img/intro-bg.png);
+        background-repeat: no-repeat;
+
+        &::before{
+            content: url(../img/intro__line-1.svg);
+            position: relative;
+            top: 353px;
+            left: 0;
+        }
+        &::after{
+            content: url(../img/intro__line-2.svg);
+            position: relative;
+            top: 353px;
+            left: 40px;
+        }
+    }
+    &__textbox{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 500px;
+        height: 345px;
+        margin: 153px 0 0 -40px;
+    }
+    &__title{
+        @include font-2;
+        letter-spacing: -2.5px;
+        color: #FFFFFF;
+        width: 500px;
+        height: 112px;
+        margin: 0;
+    }
+    &__desc{
+        @include font-3;
+        color: #fff;
+        margin: 40px 0 40px 95px;
+    }
+    &__btn{
+        display: block;
+        width: 180px;
+        height: 48px;
+        margin: 0 0 0 95px;
+        background: #FCB72B;
+        border: 1px solid transparent;
+
+        @include font-1;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover{
+            background-color: transparent;
+            border: 3px solid #FCB72B;
+            color: #FCB72B;
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .intro{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+        padding: 0;
+        margin: 0 auto;
+
+        &__content{
+            position: relative;
+            width: 767px;
+            height: 650px;
+            margin: 96px auto 0;
+            background-image: url(../img/intro-tablet-bg.png);
+            background-size: 768px 650px;
+
+            &::before{
+                content: url(../img/intro__line-2.svg);
+                position: absolute;
+                top: 473px;
+                left: -127px;
+            }
+            &::after{
+                content: '';
+            }
+            
+        }
+        &__textbox{
+            width: 573px;
+            height: 296px;
+            margin: 137px 0 0 97px;
+        }
+        &__title{
+            margin: 0;
+            width: 573px;
+            height: 112px;
+            text-align: center;
+            letter-spacing: -2.5px;
+            color: #FFFFFF;
+        }
+        &__desc{
+            text-align: center;
+            width: 573px;
+            height: 75px;
+            margin: 24px 0 32px 0;
+        }
+        &__btn{
+            height: 53px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@media screen and (max-width: 376px){
+    .intro{
+        width: 375px;
+
+        &__content{
+            width: 375px;
+            height: 650px;
+            margin: 64px auto 0;
+            background-image: url(../img/intro-mobile-bg.png);
+            background-position: center;
+            background-size: 375px 650px;
+
+            &::before{
+                content: url(../../img/intro-mobile-arrow.png);
+                position: absolute;
+                top: 540px;
+                left: 0px;
+            }
+        }
+        &__textbox{
+            width: 311px;
+            height: 356px;
+            margin: 115px 0 0 32px;
+        }
+        &__title{
+            font-size: 40px;
+            line-height: 40px;
+            text-align: center;
+            letter-spacing: -1.78571px;
+            width: 311px;
+            height: 120px;
+            margin: 0;
+        }
+        &__desc{
+            width: 311px;
+            height: 125px;
+            margin: 24px 0 34px 0;
+        }
+        &__btn{
+            width: 180px;
+            height: 53px;
+            margin: 0 0 0 65px;
+        }
+    }
+}

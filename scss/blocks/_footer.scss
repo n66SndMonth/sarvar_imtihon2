@@ -1,0 +1,258 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+.footer{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 1440px;
+    height: 396px;
+    margin: 148px auto 0;
+    border: 1px solid;
+
+    &__content{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+    }
+    &__up{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1440px;
+        height: 300px;
+        background-image: url(../img/footer-bg.png);
+        background-repeat: no-repeat;
+    }
+    &__title{
+        @include font-5;
+        letter-spacing: -2.14286px;
+        color: #FFFFFF;
+        width: 415px;
+        height: 96px;
+        margin: 102px 0 0 165px;
+    }
+    &__icons{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 360px;
+        height: 56px;
+        margin: 122px 0 0 336px;    
+    }
+    &__icon{
+        margin: 0 18px 0 0;
+    }
+
+    &__down{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 1440px;
+        height: 96px;
+        background: #333A44;
+        margin: 0;
+    }
+    &__nav{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        width: 415.4px;
+        height: 30px;
+        margin: 35px 0 0 168px;
+    }
+    &__logo{
+        width: 108px;
+        height: 30px;
+    }
+    &__list{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin: 0 0 0 58px;
+        width: 250px;
+        height: 25px;
+        gap: 32px;
+    }
+    &__item a{
+        @include font-3;
+        color: #939CAA;
+
+        &:hover{
+            color: #FCB72B;
+        }
+    }
+    &__social-nav{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 24px;
+        margin: 0 0 0 571px;
+    }
+    &__social-item{
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        width: 768px;
+        height: 396px;
+
+        &__up{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 768px;
+            height: 300px;
+            background-image: url(../img/footer-bg.png);
+            background-position: center right;
+            background-repeat: no-repeat;
+        }
+        &__title{
+            text-align: center;
+            margin: 62px 0 40px 155px;
+        }
+        &__icons{
+            margin: 0 auto;
+        }
+
+        &__down{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 768px;
+            height: 96px;
+            background: #333A44;
+            margin: 0;
+        }
+        &__nav{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: row;
+                    flex-direction: row;
+            width: 690px;
+            height: 30px;
+            margin: 35px 0 0 40px;
+        }
+        &__social-nav{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 24px;
+            margin: 0 0 0 150px;
+        }
+    }
+}
+
+@media screen and (max-width: 376px){
+    .footer{
+        width: 375px;
+        height: 740px;
+        margin: 221px 0 0 0;
+
+        &__up{
+            width: 375px;
+            height: 300px;
+            background-image: url(../img/footer-bg.png);
+            background-position: center;
+        }
+        &__title{
+            @include font-5;
+            font-size: 32px;
+            line-height: 32px;
+            text-align: center;
+            letter-spacing: -1.42857px;
+            color: #FFFFFF;
+            width: 311px;
+            height: 64px;
+            margin: 88px 0 0 32px;
+        }
+        &__icons{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 256px;
+            height: 40px;
+            margin: 40px 0 0 56px;    
+        }
+        &__icon{
+            width: 113px;
+            height: 40px;
+            margin: 0;
+        }
+        &__down{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            width: 375px;
+            height: 440px;
+            background: #333A44;
+            margin: 0;
+        }
+        &__nav{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            width: 120px;
+            height: 286px;
+            margin: 64px 0 0 128px;
+        }
+        &__logo{
+            width: 107.82px;
+            height: 28.56px;
+        }
+        &__list{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            margin: 44px auto 85px;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            width: 74px;
+            height: 107px;
+            gap: 16px;
+        }
+        &__social-nav{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            gap: 24px;
+            margin: 0 auto;
+        }
+    }
+}
